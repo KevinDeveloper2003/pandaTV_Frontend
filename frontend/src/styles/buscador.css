@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    background: transparent;
+  }
+
+
+  h1 {
+    color: #1a1a1a;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  form {
+    gap: 6px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width:70%;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: transparent;
+    transition: .6s ease;
+
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #1a1a1a
+  }
+
+  ::placeholder {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight:500;
+    text-align: start;
+  }
+  
+  button {
+    width: 35%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: #1a1a1a;
+    text-shadow: 0 0 1px #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    transition: .6s ease;
+  }
+  
+  button:hover {
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    background: #1a1a1a;
+  }
+  
+  .movie-list {
+    gap: 20px;
+    display: grid;
+    background: transparent;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .movie-card p {
+    color: #1a1a1a;
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 5px;
+    overflow-y: hidden;
+    display: inline-block;
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  
+    .movie-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .movie-card {
+      padding: 10px;
+    }
+  
+    .movie-card h2 {
+      font-size: 16px;
+    }
+  }
