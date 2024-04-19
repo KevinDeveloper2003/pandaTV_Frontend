@@ -45,7 +45,7 @@ export default function FormularioProductora() {
     // Uso el try-catch para capturar los errores
     try {
       // Enviamos las solicitudes al servidor utilizando fetch
-      const response = await fetch('http://localhost:5001/api/productora', {
+      const response = await fetch(`${REACT_APP_API_URL}/api/productora`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

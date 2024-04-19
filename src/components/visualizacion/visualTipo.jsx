@@ -6,7 +6,7 @@ export default function VisualTipo() {
   const [VisualTipo, setVisualTipo] = useState([]);
 
   const getTipos = async () => {
-    const response = await fetch("http://localhost:5001/api/tipo", {
+    const response = await fetch(`${REACT_APP_API_URL}/api/tipo`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export default function VisualTipo() {
   };
 
   const eliminar =(id) => {
-    fetch(`http://localhost:5001/api/tipo/${id}`,{
+    fetch(`${REACT_APP_API_URL}/api/tipo/${id}`,{
         method: "DELETE",
         headers: {
             "Content-Type": "application/json",

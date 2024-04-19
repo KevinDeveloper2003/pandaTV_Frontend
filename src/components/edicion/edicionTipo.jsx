@@ -31,7 +31,7 @@ export default function EdicionTipo() {
             fechaActualizacion: fechaActualizacion,
         };
 
-        const response = await fetch(`http://localhost:5001/api/tipo/${id}`,{
+        const response = await fetch(`${REACT_APP_API_URL}/api/tipo/${id}`,{
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

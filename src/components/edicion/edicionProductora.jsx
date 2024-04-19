@@ -42,7 +42,7 @@ export default function EdicionProductora() {
       estado: estado,
     };
 
-    const response = await fetch(`http://localhost:5001/api/productora/${id}`, {
+    const response = await fetch(`${REACT_APP_API_URL}/api/productora/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

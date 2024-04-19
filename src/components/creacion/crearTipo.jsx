@@ -29,7 +29,7 @@ export default function FormularioTipo() {
       fechaActualizacion: fechaActualizacion,
     }
 
-    const response = await fetch('http://localhost:5001/api/tipo', {
+    const response = await fetch(`${REACT_APP_API_URL}/api/tipo`, {
       method:"POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,7 +40,6 @@ export default function FormularioTipo() {
     if(!response.ok) {
       console.log('No fue creado un tipo')
     }
-
   };
   
   return (

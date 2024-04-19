@@ -5,7 +5,7 @@ export default function VisualProductora() {
   const [VisualProductora, setVisualProductora] = useState([]);
 
   const getProductora = async () => {
-      const response = await fetch('http://localhost:5001/api/productora', {
+      const response = await fetch(`${REACT_APP_API_URL}/api/productora`, {
           method: 'GET',
           headers: {
               'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export default function VisualProductora() {
   }
 
   const eliminar = (id) =>{
-      fetch(`http://localhost:5001/api/productora/${id}`, {
+      fetch(`${REACT_APP_API_URL}/api/productora/${id}`, {
           method: 'DELETE',
           headers: {
               'Content-Type': 'application/json',

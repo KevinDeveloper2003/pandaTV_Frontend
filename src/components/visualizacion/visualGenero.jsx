@@ -6,7 +6,7 @@ export default function VisualGenero() {
     const [VisualGenero, setVisualGenero] = useState([]);
 
     const getGeneros = async () => {
-        const response = await fetch('http://localhost:5001/api/genre', {
+        const response = await fetch(`${REACT_APP_API_URL}/api/genre`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ export default function VisualGenero() {
     }
 
     const eliminar = (id) =>{
-        fetch(`http://localhost:5001/api/genre/${id}`, {
+        fetch(`${REACT_APP_API_URL}/api/genre/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
