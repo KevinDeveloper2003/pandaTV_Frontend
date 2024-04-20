@@ -26,9 +26,9 @@ function App() {
               </NavLink>
             </li>
             <li className="li">
-              <a href="/visualizacion" className="link-animation">
+              <NavLink to={"/visualizacion"} className="link-animation">
                 Visualización
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
