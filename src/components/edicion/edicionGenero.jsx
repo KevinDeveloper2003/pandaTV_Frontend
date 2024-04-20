@@ -37,7 +37,7 @@ export default function EdicionGerero() {
       estado: estado,
     };
 
-    const response = await fetch(`${REACT_APP_API_URL}/api/genre/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/genre/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

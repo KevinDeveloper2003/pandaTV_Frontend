@@ -29,7 +29,7 @@ export default function FormularioTipo() {
       fechaActualizacion: fechaActualizacion,
     }
 
-    const response = await fetch(`${REACT_APP_API_URL}/api/tipo`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/tipo`, {
       method:"POST",
       headers: {
         "Content-Type": "application/json",

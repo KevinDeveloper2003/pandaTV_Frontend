@@ -66,7 +66,7 @@ export default function EdicionMedia() {
       actualizadoEn: actualizadoEn,
     };
 
-    const response = await fetch(`${REACT_APP_API_URL}/api/media/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/media/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -6,7 +6,7 @@ export default function VisualDirector() {
   const [VisualDirector, setVisualDirector] = useState([]);
 
   const getDirectores = async () => {
-    const response = await fetch(`${REACT_APP_API_URL}/api/director`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/director`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export default function VisualDirector() {
   };
 
   const eliminar = (id) => {
-    fetch(`${REACT_APP_API_URL}/api/director/${id}`, {
+    fetch(`${import.meta.env.VITE_APP_API_URL}/api/director/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

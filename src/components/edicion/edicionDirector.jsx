@@ -34,7 +34,7 @@ export default function EdicionDirector() {
         fechaActualizacion: fechaActualizacion,
       };
   
-      const response = await fetch(`${REACT_APP_API_URL}/api/director/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/director/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

@@ -5,7 +5,7 @@ export default function VisualMedia() {
   const [VisualMedia, setVisualMedia] = useState([]);
 
   const getMedia = async () => {
-    const response = await fetch(`${REACT_APP_API_URL}/api/media`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/media`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -19,7 +19,7 @@ export default function VisualMedia() {
   };
 
   const eliminar = (id) => {
-    fetch(`${REACT_APP_API_URL}/api/media/${id}`, {
+    fetch(`${import.meta.env.VITE_APP_API_URL}/api/media/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

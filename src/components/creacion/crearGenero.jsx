@@ -34,7 +34,7 @@ export default function FormularioGenero() {
       estado: estado,
     }
 
-    const response = await fetch(`${REACT_APP_API_URL}/api/genre`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/genre`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

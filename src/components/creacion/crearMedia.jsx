@@ -65,7 +65,7 @@ export default function FormularioMedia() {
     };
     
     try{
-      const response = await fetch(`${REACT_APP_API_URL}/api/media`, {
+      const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/media`, {
         method: "POST",
         headers:{
           "Content-Type": "application/json",
