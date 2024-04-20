@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+
 export default function FormularioDirector() {
+  console.log(import.meta.env.VITE_APP_API_URL);
   const [nombre, setNombre] = useState("");
   const [estado, setEstado] = useState("");
   const [fechaCreacion, setFechaCreacion] = useState("");
@@ -31,7 +33,7 @@ export default function FormularioDirector() {
       fechaActualizacion: fechaActualizacion,
     };
 
-    const response = await fetch(`${REACT_APP_API_URL}/api/director`, {
+    const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/director`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

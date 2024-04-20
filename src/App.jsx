@@ -8,8 +8,10 @@ import "./styles/buscador.css";
 import SearchMovies from "./components/searchMovies";
 
 function App() {
+
   return (
     <div className="App">
+      
       <header className="header">
         <nav className="nav">
           <ul className="ul">
